@@ -1,0 +1,24 @@
+.empty {
+  margin-left: 70rem;
+  margin-top: -25rem;
+  text-align: center;
+}
+
+.recipe-list {
+  position: absolute;
+  margin-left: 52rem;
+  text-align: left;
+  margin-top: -48rem;
+  width: 40rem;
+}
+
+.recipe-details {
+  position: relative;
+  margin: 20px;
+  margin-bottom: 50px;
+}
+.recipe-close {
+  position: absolute;
+  float: right;
+  margin-left: 35rem;
+}

@@ -1,38 +1,191 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
+:root {
+  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Montserrat+Alternates&display=swap");
+* {
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body,
+html {
+  background-color: #ebebeb;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0;
+  position: relative;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.container {
+  position: fixed;
+  margin: 30px;
+  width: 100rem;
+  float: left;
+  margin-left: 10rem;
 }
 
-.App-link {
-  color: #61dafb;
+textarea {
+  margin: auto;
+  margin-left: -5rem;
+  width: 50rem;
+  height: 15rem;
+  resize: none;
+  font-family: "Manrope", sans-serif;
+  font-size: small;
+  border: none;
+  background-color: #ebecf0;
+  border-radius: 20px;
+}
+textarea {
+  padding-left: 15px;
+  padding-top: 15px;
+  border: none;
+  margin-right: 8px;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+  box-sizing: content-box;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  -webkit-appearance: none;
+}
+.title {
+  width: 20rem;
+  margin-left: -4.4rem;
+  padding-right: 2px;
+}
+.empty {
+  margin-top: 0rem;
+  margin-right: 10rem;
+  position: absolute;
+}
+.recipes {
+  position: fixed;
+  border: dashed;
+  margin-top: -50rem;
+  width: 50rem;
+  height: 47rem;
+  margin-left: 52rem;
+  border-radius: 100px;
+  border-color: rgb(238, 191, 179);
+  border-width: thick;
+}
+input[type="text"] {
+  display: block;
+  font-size: 15px;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 320px;
+  height: 35px;
+  background-color: #ebecf0;
+  text-shadow: 1px 1px 0 #fff;
+  margin-right: 8px;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+  width: 10rem;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  -webkit-appearance: none;
+  padding-left: 15px;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+}
+/* $ruler: 16px;
+$color-red: #AE1100;
+$color-bg: #EBECF0;
+$color-shadow: #BABECC;
+$color-white: #FFF; */
+
+.ingredientlist {
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-left: -7rem;
+  padding-top: 35px;
+  width: 55rem;
+  height: 17rem;
+}
+.ingredient {
+  float: left;
+  width: 15rem;
+  height: 5rem;
+  position: relative;
+}
+
+.ingredientlist {
+  columns: 1;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  list-style-position: inside;
+}
+.ingredient {
+  width: 20%;
+}
+
+.add {
+  margin-top: -50px;
+  position: absolute;
+  color: #61677c;
+  font-weight: bold;
+  box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  margin-left: 5rem;
+
+  border-radius: 5px;
+  border: 0;
+  background-color: #ebecf0;
+  text-shadow: 1px 1px 0 #fff;
+  padding: 0.7rem;
+  font-size: x-large;
+  width: 3rem;
+}
+.add:hover {
+  box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
+}
+
+/* li:nth-child(3) {
+  position: absolute;
+  left: 30rem;
+  top: 0;
+  list-style-type: none;
+} */
+li {
+  list-style-type: none;
+}
+.add-ingredient {
+  margin-left: -70px;
+}
+input.input {
+  left: 200px;
+}
+
+.save {
+  margin-top: 13rem;
+
+  position: absolute;
+  color: #61677c;
+  font-weight: bold;
+  box-shadow: -5px -5px 20px #fff, 5px 5px 20px #838383;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+
+  border-radius: 5px;
+  border: 0;
+  background-color: #ebecf0;
+  text-shadow: 1px 1px 0 #fff;
+  padding: 0.7rem;
+  font-size: small;
+  font-family: "Montserrat Alternates", sans-serif;
+  width: 4rem;
+  height: 3rem;
+}
+.save:hover {
+  box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
 }
