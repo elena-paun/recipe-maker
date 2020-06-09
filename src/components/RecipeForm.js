@@ -1,13 +1,21 @@
 import React, { useContext, useState } from "react";
 import { RecipeContext } from "../contexts/RecipeContext";
-import { IngredientList } from "./IngredientList";
+import { v4 } from "uuid";
+//import { IngredientList } from "./IngredientList";
 
 export const Recipe = () => {
   const { dispatch } = useContext(RecipeContext);
 
   const [title, setTitle] = useState("");
-  const [ingredient, setIngredient] = useState("");
+  // const [input, setInput] = useState([]);
+  const [ingredient, setIngredient] = useState([" "]);
   const [instructions, setInstructions] = useState("");
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    setIngredient([...ingredient, { ingredient: " ", id: v4() }]);
+    // dispatch({ type: "INCREMENT", recipe: { ingredient } });
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -17,7 +25,7 @@ export const Recipe = () => {
       recipe: { title, ingredient, instructions },
     });
     setTitle("");
-    setIngredient("");
+    setIngredient([]);
     setInstructions("");
   };
 
@@ -35,7 +43,44 @@ export const Recipe = () => {
         />
       </div>
       <br />
-      <IngredientList />
+      <div>
+        <p className="add-ingredient">Add Ingredient</p>
+
+        <button className="add" onClick={handleClick}>
+          +
+        </button>
+        <ul className="ingredientlist">
+          <p className="input"></p>
+
+          {ingredient.map((element, i) => {
+            return (
+              <div key={i}>
+                <label>Ingredient {i + 1}</label>
+                <input
+                  className="input"
+                  type="text"
+                  placeholder="add ingredient"
+                  onChange={(e) =>
+                    setIngredient(
+                      ingredient.map((value, j) => {
+                        if (i === j) {
+                          value = e.target.value;
+                        }
+                        return value;
+                      })
+                    )
+                  }
+                />
+              </div>
+            );
+          })}
+        </ul>
+      </div>
+
+      {/* <IngredientList
+        className="input"
+        onChange={(e) => setIngredient(e.target.value)}
+      /> */}
       <br />
       <div className="instructions">
         <p>Instructions</p>
