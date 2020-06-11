@@ -11,7 +11,6 @@
 body,
 html {
   background-image: url(./components/images/hamburger-juice-onion-ring-food-artwork-hamburg-png-clip-art.png);
-
   background-repeat: no-repeat;
   background-size: 100px;
   display: flexbox;
@@ -21,7 +20,7 @@ html {
 }
 body,
 html {
-  background-color: #ebebeb63;
+  background-color: #ebebeb;
 }
 .container {
   position: fixed;
