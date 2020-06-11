@@ -6,16 +6,22 @@
 * {
   box-sizing: border-box;
 }
+.background {
+}
 body,
 html {
-  background-color: #ebebeb;
-}
-body {
-  display: flex;
-  flex-direction: column;
+  background-image: url(./components/images/hamburger-juice-onion-ring-food-artwork-hamburg-png-clip-art.png);
+
+  background-repeat: no-repeat;
+  background-size: 100px;
+  display: flexbox;
   margin: 0;
   position: relative;
   font-family: "Montserrat Alternates", sans-serif;
+}
+body,
+html {
+  background-color: #ebebeb63;
 }
 .container {
   position: fixed;
@@ -156,17 +162,16 @@ li {
 .save {
   margin-top: 13rem;
 
-  position: absolute;
   color: #61677c;
   font-weight: bold;
   box-shadow: -5px -5px 20px #fff, 5px 5px 20px #838383;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
-  text-align: justify;
   border-radius: 5px;
   border: 0;
   background-color: #ebecf0;
   text-shadow: 1px 1px 0 #fff;
+  padding: 0.7rem;
   font-size: small;
   font-family: "Montserrat Alternates", sans-serif;
   width: auto;

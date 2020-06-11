@@ -9,14 +9,17 @@ import { RecipeContextProvider } from "./contexts/RecipeContext";
 
 function App() {
   return (
-    <div className="container">
-      <RecipeContextProvider>
-        {/* <IngredientContextProvider> */}
-        <Recipe />
-        <div className="recipes"></div>
-        <RecipesList />
-        {/* </IngredientContextProvider> */}
-      </RecipeContextProvider>
+    <div className="background">
+      {" "}
+      <div className="container layer">
+        <RecipeContextProvider>
+          {/* <IngredientContextProvider> */}
+          <Recipe />
+          <div className="recipes"></div>
+          <RecipesList />
+          {/* </IngredientContextProvider> */}
+        </RecipeContextProvider>
+      </div>
     </div>
   );
 }
