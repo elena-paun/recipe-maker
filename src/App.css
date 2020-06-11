@@ -40,7 +40,6 @@ textarea {
 textarea {
   padding-left: 15px;
   padding-top: 15px;
-  border: none;
   margin-right: 8px;
   box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
   box-sizing: content-box;
@@ -49,7 +48,7 @@ textarea {
   -webkit-appearance: none;
 }
 .title {
-  width: 20rem;
+  width: 50%;
   margin-left: -4.4rem;
   padding-right: 2px;
 }
@@ -58,31 +57,23 @@ textarea {
   margin-right: 10rem;
   position: absolute;
 }
-.recipes {
-  position: fixed;
-  border: dashed;
-  margin-top: -50rem;
-  width: 50rem;
-  height: 47rem;
-  margin-left: 52rem;
-  border-radius: 100px;
-  border-color: rgb(238, 191, 179);
-  border-width: thick;
-}
+
 input[type="text"] {
   display: block;
   font-size: 15px;
-  width: 100%;
 }
-
+.input {
+  width: 20rem;
+}
 input {
   margin-top: 0.5rem;
+
   border: none;
   border-radius: 320px;
   height: 35px;
   background-color: #ebecf0;
   text-shadow: 1px 1px 0 #fff;
-  margin-right: 8px;
+  margin-right: 80px;
   box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
   width: 10rem;
   box-sizing: border-box;
@@ -105,7 +96,6 @@ $color-white: #FFF; */
 .ingredientlist {
   position: relative;
   overflow-y: scroll;
-  overflow-x: hidden;
   margin-left: -7rem;
   padding-top: 35px;
   width: 55rem;
@@ -119,7 +109,7 @@ $color-white: #FFF; */
 }
 
 .ingredientlist {
-  columns: 1;
+  columns: 2;
   -webkit-columns: 2;
   -moz-columns: 2;
   list-style-position: inside;
@@ -162,9 +152,6 @@ li {
 .add-ingredient {
   margin-left: -70px;
 }
-input.input {
-  left: 200px;
-}
 
 .save {
   margin-top: 13rem;
@@ -175,15 +162,14 @@ input.input {
   box-shadow: -5px -5px 20px #fff, 5px 5px 20px #838383;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
-
+  text-align: justify;
   border-radius: 5px;
   border: 0;
   background-color: #ebecf0;
   text-shadow: 1px 1px 0 #fff;
-  padding: 0.7rem;
   font-size: small;
   font-family: "Montserrat Alternates", sans-serif;
-  width: 4rem;
+  width: auto;
   height: 3rem;
 }
 .save:hover {

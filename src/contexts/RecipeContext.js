@@ -5,8 +5,13 @@ import { recipeReducer } from "../reducers/recipeReducer";
 export const RecipeContext = createContext();
 
 export const RecipeContextProvider = ({ children }) => {
-  const [recipes, dispatch] = useReducer(recipeReducer, []);
-
+  const [recipes, dispatch] = useReducer(recipeReducer, [], () => {
+    const localData = localStorage.getItem("recipes");
+    return localData ? JSON.parse(localData) : [];
+  });
+  useEffect(() => {
+    localStorage.setItem("recipes", JSON.stringify(recipes));
+  }, [recipes]);
   return (
     <RecipeContext.Provider value={{ recipes, dispatch }}>
       {children}

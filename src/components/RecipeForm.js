@@ -55,7 +55,7 @@ export const Recipe = () => {
           {ingredient.map((element, i) => {
             return (
               <div key={i}>
-                <label>Ingredient {i + 1}</label>
+                {/* <label>Ingredient {i + 1}</label> */}
                 <input
                   className="input"
                   type="text"

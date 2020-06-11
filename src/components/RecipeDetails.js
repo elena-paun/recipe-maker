@@ -10,17 +10,27 @@ export const RecipeDetails = ({ recipe }) => {
         className="recipe-close"
         onClick={() => dispatch({ type: "REMOVE_RECIPE", id: recipe.id })}
       >
-        x
+        &#10005;
       </button>
       <div>
         <div className="recipe-title">{recipe.title}</div>
+        <p className="ingredients-title">
+          {" "}
+          Ingredients <br />
+        </p>
+        <ul>
+          {recipe.ingredient.map((el, i) => {
+            console.log(el);
+            return (
+              <li key={i} className="recipe-ingredient">
+                {el}
+              </li>
+            );
+          })}
+        </ul>
 
-        {recipe.ingredient.map((el) => {
-          console.log(el);
-          return <div className="recipe-ingredient">{el}</div>;
-        })}
         {/* {console.log(recipe.ingredient)} */}
-
+        <p className="instructions-title">Instructions</p>
         <div className="recipe-instructions">{recipe.instructions}</div>
       </div>
     </li>
