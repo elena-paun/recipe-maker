@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/recipe-maker/static/css/main.5d3c4475.chunk.css",
+    "main.css": "/recipe-maker/static/css/main.b8e1aa9a.chunk.css",
     "main.js": "/recipe-maker/static/js/main.a90c8bfe.chunk.js",
     "main.js.map": "/recipe-maker/static/js/main.a90c8bfe.chunk.js.map",
     "runtime-main.js": "/recipe-maker/static/js/runtime-main.81b62f96.js",
@@ -8,16 +8,16 @@
     "static/js/2.85b302e4.chunk.js": "/recipe-maker/static/js/2.85b302e4.chunk.js",
     "static/js/2.85b302e4.chunk.js.map": "/recipe-maker/static/js/2.85b302e4.chunk.js.map",
     "index.html": "/recipe-maker/index.html",
-    "precache-manifest.d39ea9796a0b8c3b24b7812480d7f2fd.js": "/recipe-maker/precache-manifest.d39ea9796a0b8c3b24b7812480d7f2fd.js",
+    "precache-manifest.25283af7e87fc50f23465883acd9d4e3.js": "/recipe-maker/precache-manifest.25283af7e87fc50f23465883acd9d4e3.js",
     "service-worker.js": "/recipe-maker/service-worker.js",
-    "static/css/main.5d3c4475.chunk.css.map": "/recipe-maker/static/css/main.5d3c4475.chunk.css.map",
+    "static/css/main.b8e1aa9a.chunk.css.map": "/recipe-maker/static/css/main.b8e1aa9a.chunk.css.map",
     "static/js/2.85b302e4.chunk.js.LICENSE.txt": "/recipe-maker/static/js/2.85b302e4.chunk.js.LICENSE.txt",
     "static/media/App.css": "/recipe-maker/static/media/hamburger-juice-onion-ring-food-artwork-hamburg-png-clip-art.12763465.png"
   },
   "entrypoints": [
     "static/js/runtime-main.81b62f96.js",
     "static/js/2.85b302e4.chunk.js",
-    "static/css/main.5d3c4475.chunk.css",
+    "static/css/main.b8e1aa9a.chunk.css",
     "static/js/main.a90c8bfe.chunk.js"
   ]
 }
