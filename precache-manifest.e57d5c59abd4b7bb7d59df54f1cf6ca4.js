@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2676f9b47e2b10d6b7d7e4f34558ac2c",
+    "revision": "855bd950b321db298ab9e02fa3b603ef",
     "url": "/recipe-maker/index.html"
   },
   {
-    "revision": "cb2b5822a112d4cce6f6",
-    "url": "/recipe-maker/static/css/main.68d707c7.chunk.css"
+    "revision": "a0e481ff5e14d69c951c",
+    "url": "/recipe-maker/static/css/main.5de42f9a.chunk.css"
   },
   {
     "revision": "560867f2f0ac1326db2d",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/recipe-maker/static/js/2.85b302e4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cb2b5822a112d4cce6f6",
-    "url": "/recipe-maker/static/js/main.5a726f0a.chunk.js"
+    "revision": "a0e481ff5e14d69c951c",
+    "url": "/recipe-maker/static/js/main.54b7db5d.chunk.js"
   },
   {
     "revision": "e3959a0c27fa0caa2d32",
